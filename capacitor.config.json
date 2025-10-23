@@ -1,0 +1,6 @@
+{
+  "appId": "com.draco.calculator",
+  "appName": "DRACO Calculator",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

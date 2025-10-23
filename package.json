@@ -1,0 +1,17 @@
+{
+  "name": "draco-calculator",
+  "version": "1.0.0",
+  "description": "DRACO iNC Calculator \u2014 web-first calculator with time/date display",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "live-server --port=8080 --open=./index.html",
+    "electron": "electron .",
+    "build:web": "echo \"No build step. This is static web files.\""
+  },
+  "author": "Danford Nyakego",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DRACO iNC Calculator</title>
+  <meta name="description" content="Cross-platform calculator — web-first; wrap with Electron (Windows) or Capacitor (Android)." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>DRACO iNC Calculator</h1>
+      <div class="datetime">
+        <div id="time">--:--:--</div>
+        <div id="date">Loading date...</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="calc">
+        <input type="text" id="display" readonly aria-label="Calculator display" />
+        <div class="keys">
+          <button data-action="clear" class="span-2">C</button>
+          <button data-action="back">⌫</button>
+          <button data-value="/">÷</button>
+
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-value="*">×</button>
+
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="-">−</button>
+
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value="+">+</button>
+
+          <button data-value="0" class="span-2">0</button>
+          <button data-value=".">.</button>
+          <button data-action="equals" class="equals">=</button>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h2>Cloud-ready</h2>
+        <p>Host this folder on <strong>GitHub Pages</strong> for web testing. Wrap with <strong>Electron</strong> for Windows or <strong>Capacitor</strong> for Android — instructions in README.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>DRACO iNC Techs • <span id="year"></span></small>
+    </footer>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
